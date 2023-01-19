@@ -27,16 +27,13 @@ public class Problem04 {
                     if (answer.equals("n")) {
                         play = false;
                     }
-                    else if (answer.equals("y")) {
-                        play = true;
-                    }
                 }
 
                 else if (guess < target) {
                     System.out.printf("The number lies above your guess. Try again.%n%n");
                 }
 
-                else if (guess > target) {
+                else {
                     System.out.printf("The number lies below your guess. Try again.%n%n");
                 }
             }
