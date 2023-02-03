@@ -51,7 +51,7 @@ public class StudentDriver {
     }
 
     // problem 3
-    private static Student findBestStudent(Student[] students) {
+    public static Student findBestStudent(Student[] students) {
         int highestMarks = 0;
         int highestFailMarks = 0;
         int indexBestStudent = -1;

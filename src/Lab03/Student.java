@@ -5,6 +5,25 @@ public class Student {
     private String lastName;
     public String[] courseGrades = new String[10];
 
+    public Student(String firstName, String lastName, int[] marks) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+
+        /* Init course array and assign random marks */
+        /* Assigning courses at every alternate index in the array */
+        courseGrades[0] = "Math";
+        courseGrades[2] = "Science";
+        courseGrades[4] = "English";
+        courseGrades[6] = "Urdu";
+        courseGrades[8] = "Chinese";
+
+        int j = 0;
+        for (int i = 1; i < courseGrades.length; i += 2) {
+            courseGrades[i] = String.valueOf(marks[j]);
+            j ++;
+        }
+    }
+
     public Student(String fName, String lName, String[] courses) {
         // step 4
         firstName = fName;
@@ -15,7 +34,6 @@ public class Student {
             courseGrades[i + 1] = String.valueOf(randomGrade());    // randomised marks
         }
     }
-
 
 
     // step 5
