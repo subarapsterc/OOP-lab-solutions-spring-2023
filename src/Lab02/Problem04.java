@@ -11,8 +11,8 @@ public class Problem04 {
         Person[] people = new Person[(int) (Math.random() * 50 + 1)];
 
         for (int i = 0; i < people.length; i++) {
-            Pet temp = new Pet(petNames[random.nextInt(10)], "puppy", random.nextInt(1, 11));
-            people[i] = new Person(personNames[random.nextInt(10)], random.nextInt(1,100), temp);
+            Pet temp = new Pet(petNames[random.nextInt(10)], "puppy", random.nextInt(10));
+            people[i] = new Person(personNames[random.nextInt(10)], random.nextInt(100), temp);
 
             System.out.println(people[i].getDetails());
             System.out.println();
